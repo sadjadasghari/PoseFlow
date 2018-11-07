@@ -2,7 +2,7 @@ CC=g++
 
 OS_NAME=$(shell uname -s)
 ifeq ($(OS_NAME),Linux) 
-  LAPACKLDFLAGS=/usr/local/atlas/lib/libsatlas.so   # single-threaded blas
+  LAPACKLDFLAGS=/usr/lib/libblas.so   # single-threaded blas
   #LAPACKLDFLAGS=/usr/lib64/atlas/libtatlas.so  # multi-threaded blas
   #BLAS_THREADING=-D MULTITHREADED_BLAS # remove this if wrong
 endif
